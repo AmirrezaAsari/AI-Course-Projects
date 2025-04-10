@@ -26,7 +26,7 @@ def bidirectional_search(graph, start, goal, is_directed):
 
         if backward_queue:
             current_backward = backward_queue.popleft()
-            print('backward: 'current_backward)
+            print('backward: ', current_backward)
             if (is_directed == True):
                 for neighbor in reverse_graph.get(current_backward, []):
                     if neighbor not in backward_visited:
