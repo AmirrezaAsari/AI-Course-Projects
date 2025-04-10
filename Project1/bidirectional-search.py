@@ -75,7 +75,7 @@ def build_reverse_graph(graph): # we need this when the graph is directed.
 if __name__ == "__main__":
     graph = {
         'A': ['F', 'G', 'L'],
-        'F': ['p', 'Q'],
+        'F': ['P', 'Q'],
         'P': ['G'],
         'G': ['Q', 'R'],
         'Q': ['H'],
