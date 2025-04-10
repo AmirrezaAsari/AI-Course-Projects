@@ -22,7 +22,7 @@ def depth_limited_dfs(graph, start, goal, depth_limit):
             return return_path(visited, goal)
 
         if depth < depth_limit:
-              for neighbor in graph.get(current, []):
+            for neighbor in graph.get(current, []):
                 if neighbor not in visited:
                     visited[neighbor] = current
                     stack.append((neighbor, depth + 1))
