@@ -6,7 +6,7 @@ def bfs_search(graph, start, goal):
 
     while queue:
         current = queue.popleft()
-        print('bfs: ', current)
+        # print('bfs: ', current)
         if current == goal:
             return return_path(visited, goal)
         for neighbor in graph.get(current, []):
