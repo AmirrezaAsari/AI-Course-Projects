@@ -6,7 +6,7 @@
 #### Part 2: 
 https://github.com/AmirrezaAsari/AI-projects/blob/master/Project1/bidirectional_search.py
 #### Part3:
- https://github.com/AmirrezaAsari/AI-projects/blob/master/Project1/benchmark_results.md
+https://github.com/AmirrezaAsari/AI-projects/blob/master/Project1/benchmark_results.md
 https://github.com/AmirrezaAsari/AI-projects/blob/master/Project1/benchmark.py
 https://github.com/AmirrezaAsari/AI-projects/blob/master/Project1/bfs_search.py
 https://github.com/AmirrezaAsari/AI-projects/blob/master/Project1/dfs_search.py
