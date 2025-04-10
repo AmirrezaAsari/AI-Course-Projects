@@ -41,8 +41,7 @@ I also ran another benchmark where I considered the graph undirected (is_directe
 When the graph is considered undirected, the bidirectional search algorithm is faster than the other two, which aligns with theoretical expectations.  
 However, it requires more memory due to maintaining two frontiers.  
 In this case, the memory usage is lower compared to directed version because there's no need to reverse the graph. But it's still more than two other algorithms, which is not what we expect theoretically. Well I think it can be because of the implementation, the graph we have and the start and goal node that we are running benchmark on and etc.
-For a more realistic benchmark, we could test all nodes as both start and goal across multiple graphs and compute the average results. But theres no need for that since we have theory.
-
+For a more realistic benchmark, we could test all nodes as both start and goal across multiple graphs and compute the average results. However, there's no need for that since we have theoretical expectations.
 
 ## Conclusion
 The Bidirectional search is faster than the BFS and DFS search. Time complexity for BFS and DFS is: $$ O(b^m) $$
