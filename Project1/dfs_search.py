@@ -4,7 +4,7 @@ def dfs_search(graph, start, goal):
 
     while stack:
         current = stack.pop()
-        print('dfs: ', current)
+        # print('dfs: ', current)
         if current == goal:
             return return_path(visited, goal)
         for neighbor in reversed(graph.get(current, [])):  # reversed for standard DFS order
