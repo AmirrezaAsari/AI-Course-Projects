@@ -1,18 +1,16 @@
-from collections import deque
-
-def bfs_search(graph, start, goal):
-    queue = deque([start])
+def dfs_search(graph, start, goal):
+    stack = [start]
     visited = {start: None}
 
-    while queue:
-        current = queue.popleft()
-        print('bfs: ', current)
+    while stack:
+        current = stack.pop()
+        print('dfs: ', current)
         if current == goal:
             return return_path(visited, goal)
-        for neighbor in graph.get(current, []):
+        for neighbor in reversed(graph.get(current, [])):  # reversed for standard DFS order
             if neighbor not in visited:
                 visited[neighbor] = current
-                queue.append(neighbor)
+                stack.append(neighbor)
     return None
 
 
@@ -24,6 +22,8 @@ def return_path(visited, goal):
         current = visited[current]
     path.reverse()
     return path
+
+
 
 if __name__ == "__main__":
     graph = {
@@ -52,4 +52,4 @@ if __name__ == "__main__":
 
     start = 'A'
     goal = 'E'
-    print("BFS Search:", bfs_search(graph, start, goal))
+    print("DFS search:", dfs_search(graph, start, goal))
