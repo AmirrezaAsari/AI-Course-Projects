@@ -44,7 +44,7 @@ In this case, the memory usage is lower compared to directed version because the
 For a more realistic benchmark, we could test all nodes as both start and goal across multiple graphs and compute the average results. However, there's no need for that since we have theoretical expectations.
 
 ## Conclusion
-The Bidirectional search is faster than the BFS and DFS search. Time complexity for BFS and DFS is: $$ O(b^m) $$
+The Bidirectional search is faster than the BFS and DFS search. Time complexity for BFS and DFS is: $$O(b^m)$$
 and for the Bidirectional search, we are actually running two searches at the same time, so the time complexity would be: $$O\left(b^{\frac{m}{2}}\right)$$
 Comparing memory usages, for BFS  its $$O(b^m)$$ all nodes at the current level in the queue. But in DFS we store the nodes along the current path, so the complexity is $$O(bd)$$
 for the Bidirectional search, we have two frontiers but we have half of it compared to BFS, so memory complexity is $$O\left(2b^{\frac{m}{2}}\right)$$
