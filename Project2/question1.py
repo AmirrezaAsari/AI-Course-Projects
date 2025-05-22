@@ -48,7 +48,7 @@ K = Node("K", 120)
 L = Node("L", 125)
 M = Node("M", 122)
 N = Node("N", 130)
-#childs
+# children
 A.add_child(B)
 A.add_child(C)
 A.add_child(D)
